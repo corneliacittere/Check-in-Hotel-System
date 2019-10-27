@@ -1,4 +1,6 @@
-<h2>A Check in Hotel System created in Python using object oriented programming.</h2>
+<h2>Check-in System</h2>
+
+<h3>A Check-in Hotel System created in Python using object oriented programming.</h3>
 
 <h3>Guests can:</h3>
 <ul>
