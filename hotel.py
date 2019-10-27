@@ -93,15 +93,3 @@ class Hotel:
         else:
             print('Are you sure that you are our guest?')
             return None
-
-
-class Guest:
-
-
-
-a = Hotel('Aurora', 5, 10, 1)
-a.rooms_available()
-a.check_in_double_room(2, 5)
-
-
-
