@@ -13,7 +13,7 @@ class Hotel:
 
     def rooms_available(self):
         """Displays the Hotel availability"""
-        print('At the moment in Hotel {} there are {} Single Rooms, {} Double Rooms and {} Twin Rooms available '.
+        print('At the moment in Hotel {} there are {} Single Rooms, {} Double Rooms and {} Twin Rooms available.'.
               format(self.hotelName, self.single, self.double, self.twin))
 
     def check_in_single_room(self, n, days):
@@ -61,9 +61,8 @@ class Hotel:
             print('Your booking is available till {}.'.format(term))
             print('We hope you enjoy your stay with us at the {} Hotel!'.format(self.hotelName))
 
-    def check_out(self, k):
+    def check_out(self, room_type, num_of_rooms, date_of_check_in):
         """Creating a bill"""
-        room_type, num_of_rooms, date_of_check_in = k
         bill = 0
 
         # enter date_of_check_in in YYYY-MM-DD format
@@ -85,9 +84,10 @@ class Hotel:
             #discount calculation
             if bill >= 500:
                 bill -= bill * 0.15
+                bil = int(bill)
 
             print('Thank you for choosing {} Hotel!'.format(self.hotelName))
-            print('That would be {} $'.format(bill))
+            print('That would be {}$.'.format(bill))
             return bill
 
         else:
